@@ -1,17 +1,16 @@
 import React from 'react';
 import { 
-  SafeAreaView,
   View,
   Text,
-  Image,
-  TouchableOpacity,
+  ImageBackground,
   StyleSheet,
   Dimensions
 } from 'react-native';
-import { Feather } from '@expo/vector-icons';
 import { useNavigation } from '@react-navigation/core';
 
-import wateringImg from '../assets/watering.png'
+import { Button } from "./../components/Button";
+
+import happyGirl from './../assets/happy-girl.jpg'
 import colors from './../styles/colors';
 import fonts from './../styles/fonts';
 
@@ -19,27 +18,27 @@ export function Welcome() {
     const navigation = useNavigation();
     
     function handleNextScreen() {
-        navigation.navigate('UserIdentification')
+        // navigation.navigate('UserIdentification')
     }
 
     return(
-        <View style={styles.wrapper}>
-            <Text style={styles.title}>
-                Gerencie{'\n'}
-                suas plantas de{'\n'}
-                forma fácil
-            </Text>
+        <View style={styles.container}>
+            <ImageBackground source={happyGirl} style={styles.image}>
+                <View style={styles.overlay}>
+                    <View style={styles.wrapper}>
+                        <Text style={styles.title}>
+                            Método TURBO queime gordura corporal RÁPIDO,
+                            com treinos de até 25min por dia
+                        </Text>
 
-            <TouchableOpacity 
-                style={styles.button}
-                activeOpacity={0.7}
-                onPress={handleNextScreen}
-            >
-                <Feather 
-                    name="chevron-right"
-                    style={styles.buttonIcon}
-                />
-            </TouchableOpacity>
+                        <Button 
+                            title="Começar"
+                            onPress={handleNextScreen}
+                            block
+                        />
+                    </View>
+                </View>
+            </ImageBackground>
         </View>
     )
 }
@@ -52,7 +51,7 @@ const styles = StyleSheet.create({
         flex: 1,
         alignItems: 'center',
         justifyContent: 'space-around',
-        paddingHorizontal: 20 
+        paddingHorizontal: 40
     },
     title: {
         fontSize: 28,
@@ -64,7 +63,13 @@ const styles = StyleSheet.create({
         lineHeight: 34
     },
     image: {
-        height: Dimensions.get('window').width * 0.7,
+        flex: 1,
+        resizeMode: "cover",
+        justifyContent: "center"
+    },
+    overlay: {
+        backgroundColor:'rgba(0,0,0,0.5)',
+        flex: 1,
     },
     subtitle: {
         textAlign: 'center',
