@@ -1,0 +1,32 @@
+{
+  "lives": [
+    {
+      "id": 1,
+      "name": "Live 1",
+      "difficulty": "Iniciante",
+      "thumbnail": "https://image.freepik.com/fotos-gratis/jovem-homem-forte-se-exercitando-na-academia_1303-25251.jpg",
+      "datetime": "2021-07-03T10:00:00Z"
+    },
+    {
+      "id": 2,
+      "name": "Live 2",
+      "difficulty": "Intermediário",
+      "thumbnail": "https://image.freepik.com/fotos-gratis/retrato-de-corpo-inteiro-de-uma-desportista-em-forma-concentrada_171337-10248.jpg",
+      "datetime": "2021-07-04T10:00:00Z"
+    },
+    {
+      "id": 3,
+      "name": "Live 3",
+      "difficulty": "Intermediário",
+      "thumbnail": "https://image.freepik.com/fotos-gratis/retrato-de-corpo-inteiro-de-uma-desportista-em-forma-concentrada_171337-10248.jpg",
+      "datetime": "2021-07-04T10:00:00Z"
+    },
+    {
+      "id": 4,
+      "name": "Live 4",
+      "difficulty": "Intermediário",
+      "thumbnail": "https://image.freepik.com/fotos-gratis/retrato-de-corpo-inteiro-de-uma-desportista-em-forma-concentrada_171337-10248.jpg",
+      "datetime": "2021-07-04T10:00:00Z"
+    }
+  ]
+}

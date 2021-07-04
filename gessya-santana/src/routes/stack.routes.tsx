@@ -3,6 +3,7 @@ import { createStackNavigator } from '@react-navigation/stack';
 
 import colors from '../styles/colors';
 import { Welcome } from '../pages/Welcome';
+import { Home } from '../pages/Home';
 
 const StackRoutes = createStackNavigator();
 
@@ -18,6 +19,10 @@ const AppRoutes: React.FC = () => (
         <StackRoutes.Screen 
             name="Welcome"
             component={Welcome}
+        />
+        <StackRoutes.Screen 
+            name="Home"
+            component={Home}
         />
     </StackRoutes.Navigator>
 )

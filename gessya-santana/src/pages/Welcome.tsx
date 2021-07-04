@@ -18,7 +18,7 @@ export function Welcome() {
     const navigation = useNavigation();
     
     function handleNextScreen() {
-        // navigation.navigate('UserIdentification')
+        navigation.navigate('Home')
     }
 
     return(
@@ -70,25 +70,5 @@ const styles = StyleSheet.create({
     overlay: {
         backgroundColor:'rgba(0,0,0,0.5)',
         flex: 1,
-    },
-    subtitle: {
-        textAlign: 'center',
-        fontSize: 18,
-        paddingHorizontal: 20,
-        color: colors.white,
-        fontFamily: fonts.text
-    },
-    button: {
-        backgroundColor: colors.red,
-        justifyContent: 'center',
-        alignItems: 'center',
-        borderRadius: 16,
-        marginBottom: 10,
-        width: 56,
-        height: 56
-    },
-    buttonIcon: {
-        color: colors.white,
-        fontSize: 24
     },
 });
