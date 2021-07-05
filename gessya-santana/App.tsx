@@ -10,7 +10,7 @@ import {
   Courgette_400Regular,
 } from '@expo-google-fonts/courgette';
 import AppLoading from 'expo-app-loading';
-
+import { AppearanceProvider } from 'react-native-appearance';
 import Routes from './src/routes';
 
 export default function App() {
@@ -27,6 +27,8 @@ export default function App() {
   }
 
   return (
-    <Routes />
+    <AppearanceProvider>
+      <Routes />
+    </AppearanceProvider>
   );
 }

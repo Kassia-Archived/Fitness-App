@@ -57,6 +57,7 @@ export const LiveCard = ({ data, ...rest}: LiveProps) => {
                 </View>
             </ImageBackground>
             <Text 
+                numberOfLines={1}
                 style={[
                     styles.text, 
                     { marginLeft: 10, paddingTop: 5, color: active ? colors.red : colors.white}

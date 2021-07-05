@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { 
   View,
   StyleSheet,
-  Image,
+  ScrollView,
   Text,
   FlatList,
   ActivityIndicator
@@ -69,7 +69,9 @@ export function Home() {
     }
 
     return (
-        <View style={styles.container}>
+        <ScrollView
+            contentContainerStyle={styles.container}
+        >
             <Header />
             <View style={styles.content}>
                 <Input 
@@ -112,19 +114,19 @@ export function Home() {
                     contentContainerStyle={styles.userList}
                 />
             </View>
-        </View>
+        </ScrollView>
     );
 }
 
 const styles = StyleSheet.create({
     container: {
-        flex: 1,
         justifyContent: 'flex-start',
         paddingHorizontal: 30,
         backgroundColor: colors.background
     },
     content: {
-        justifyContent: "flex-start"
+        justifyContent: "flex-start",
+        paddingVertical: 20
     },
     title: {
         fontFamily: fonts.heading,

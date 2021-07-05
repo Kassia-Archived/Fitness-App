@@ -23,9 +23,10 @@ const styles = StyleSheet.create({
     flex: 1,
     justifyContent: 'center',
     alignItems: 'center',
+    backgroundColor: '#000',
   },
   animation: {
-    backgroundColor: 'transparent',
+    backgroundColor: '#000',
     width: 200,
     height: 200,
   }

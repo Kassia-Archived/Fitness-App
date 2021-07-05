@@ -18,7 +18,7 @@ export function Welcome() {
     const navigation = useNavigation();
     
     function handleNextScreen() {
-        navigation.navigate('Home')
+        navigation.navigate('Auth')
     }
 
     return(

@@ -4,11 +4,13 @@ import { createStackNavigator } from '@react-navigation/stack';
 import colors from '../styles/colors';
 import { Welcome } from '../pages/Welcome';
 import { Home } from '../pages/Home';
+import AuthRoutes from './tab.routes';
 
 const StackRoutes = createStackNavigator();
 
 const AppRoutes: React.FC = () => (
     <StackRoutes.Navigator
+        initialRouteName={"Welcome"}
         headerMode="none"
         screenOptions={{
             cardStyle: {
@@ -21,8 +23,8 @@ const AppRoutes: React.FC = () => (
             component={Welcome}
         />
         <StackRoutes.Screen 
-            name="Home"
-            component={Home}
+            name="Auth"
+            component={AuthRoutes}
         />
     </StackRoutes.Navigator>
 )
