@@ -44,7 +44,7 @@ export function Lesson() {
                     style={{
                         width: Dimensions.get('window').width, 
                         height: Dimensions.get('window').width * (9 / 16), 
-                        videoBackgroundColor: "red", 
+                        videoBackgroundColor: colors.background, 
                     }}
                     slider={{
                         visible: true
@@ -52,9 +52,8 @@ export function Lesson() {
                     videoProps={{
                         shouldPlay: true,
                         resizeMode: Video.RESIZE_MODE_CONTAIN,
-                        source: {
-                            uri: 'https://agenceapicorp.com/wp-content/uploads/agostini/AGOSTINI_YOUTUBE.mp4',
-                        },
+                        source: require("./../assets/video_1.mp4"),
+                        posterSource: { uri: route.params.lesson.thumbnail }
                     }}
                 />
             </View>
