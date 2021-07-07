@@ -16,19 +16,18 @@ import Video, {
 } from 'react-native-video';
 import Orientation from 'react-native-orientation-locker';
 import FontAwesome5 from 'react-native-vector-icons/FontAwesome5';
-import PlayerControls from "./../components/PlayerControls"
-import ProgressBar from "./../components/ProgressBar"
+import PlayerControls from "../components/PlayerControls"
+import ProgressBar from "../components/ProgressBar"
 
 import { useIsFocused, useNavigation } from '@react-navigation/native';
 import { useRemoteMediaClient, useCastSession } from 'react-native-google-cast';
-import { LessonProps } from './../../../libs/storage';
-import colors from "./../../../styles/colors";
-import fonts from "./../../../styles/fonts";
+import { LessonProps } from '../../../libs/storage';
+import colors from "../../../styles/colors";
+import fonts from "../../../styles/fonts";
 
 interface VideoProps {
     data: LessonProps
 }
-
 
 const VideoPlayer = ({ data }: VideoProps) => {
     const client = useRemoteMediaClient();
@@ -108,7 +107,8 @@ const VideoPlayer = ({ data }: VideoProps) => {
     }
 
     const onLoadEnd = (data: any) => {
-        videoRef.current.seek(0);
+        // videoRef.current.seek(0);
+        console.log("entrei")
         
         setState(s => ({
             ...s,
@@ -157,12 +157,11 @@ const VideoPlayer = ({ data }: VideoProps) => {
 
     return (
         <View style={styles.container}>
-            { isFocused ? <StatusBar barStyle={"light-content"} backgroundColor={colors.background} /> : null }
             <TouchableWithoutFeedback onPress={showControls}>
                 <View>
                     <Video
                         ref={videoRef}
-                        source={{uri: "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4"}}
+                        source={{uri: "https://d3dye4q2iulex5.cloudfront.net/DANCE_MIX-2-python/hls_480p.m3u8"}}
                         style={state.fullscreen ? styles.fullscreenVideo : styles.video}
                         controls={false}
                         resizeMode={'contain'}
@@ -262,7 +261,7 @@ const styles = StyleSheet.create({
         fontSize: 20,
         textAlign: 'justify',
         color: colors.white,
-        fontFamily: "Roboto-Regular"
+        fontFamily: fonts.text
     },
     chromecastButton: {
         flex: 1,

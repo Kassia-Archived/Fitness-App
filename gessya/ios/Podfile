@@ -11,7 +11,7 @@ target 'gessya' do
     # to enable hermes on iOS, change `false` to `true` and then install pods
     :hermes_enabled => false
   )
-
+  
   pod 'react-native-splash-screen', :path => '../node_modules/react-native-splash-screen'
 
   target 'gessyaTests' do

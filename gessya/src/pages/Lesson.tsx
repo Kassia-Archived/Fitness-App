@@ -20,7 +20,7 @@ import colors from '../styles/colors';
 import fonts from '../styles/fonts';
 import api from '../services/api';
 import { ItemLesson } from '../components/ItemLesson';
-import VideoPlayer from '../components/VideoPlayer/views/VideoPlayer.android';
+import VideoPlayer from '../components/VideoPlayer/views/VideoPlayer.ios';
 
 type ParamList = {
     Detail: {
@@ -52,7 +52,6 @@ export function Lesson() {
 
 const styles = StyleSheet.create({
     videoWrapper: {
-        backgroundColor: "yellow",
         width: Dimensions.get("window").width, 
         height: Dimensions.get('window').width * (9 / 16)
     },

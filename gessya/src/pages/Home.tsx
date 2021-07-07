@@ -121,7 +121,8 @@ const styles = StyleSheet.create({
     container: {
         justifyContent: 'flex-start',
         paddingHorizontal: 30,
-        backgroundColor: colors.background
+        backgroundColor: colors.background,
+        flex: 1
     },
     content: {
         justifyContent: "flex-start",
