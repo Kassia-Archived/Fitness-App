@@ -10,9 +10,9 @@ import {
 } from 'react-native';
 import Video from 'react-native-video';
 import { useIsFocused, useNavigation } from '@react-navigation/native';
-import { LessonProps } from '../../../libs/storage';
-import colors from '../../../styles/colors';
-import fonts from '../../../styles/fonts';
+import { LessonProps } from '../../libs/storage';
+import colors from '../../styles/colors';
+import fonts from '../../styles/fonts';
 
 interface VideoProps {
     data: LessonProps

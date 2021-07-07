@@ -14,13 +14,9 @@ import { RouteProp, useNavigation, useRoute } from '@react-navigation/native';
 
 import { LessonProps } from '../libs/storage';
 
-import { Load } from '../components/Load';
-
 import colors from '../styles/colors';
 import fonts from '../styles/fonts';
-import api from '../services/api';
-import { ItemLesson } from '../components/ItemLesson';
-import VideoPlayer from '../components/VideoPlayer/views/VideoPlayer.ios';
+import VideoPlayer from '../components/VideoPlayer';
 
 type ParamList = {
     Detail: {

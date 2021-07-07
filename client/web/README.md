@@ -3,7 +3,7 @@
 </h1>
 
 <h3 align="center">
-    Streamig exercises video app
+    Streamig exercises video app 🚀
 </h3>
 
 <p align="center">
