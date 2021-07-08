@@ -32,8 +32,7 @@ export function Welcome() {
                 <View style={styles.overlay}>
                     <View style={styles.wrapper}>
                         <Text style={styles.title}>
-                            Método TURBO queime gordura corporal RÁPIDO,
-                            com treinos de até 25min por dia
+                            Veja os vídeos do seu personal e transmita-os para sua TV usando Chromecast ou Airplay
                         </Text>
 
                         <Button 

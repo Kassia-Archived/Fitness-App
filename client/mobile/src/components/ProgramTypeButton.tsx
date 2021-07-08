@@ -1,11 +1,10 @@
 import React from 'react';
-import { View, Text, StyleSheet, SafeAreaView } from 'react-native';
-import { RectButton, RectButtonProps } from 'react-native-gesture-handler';
+import { Text, StyleSheet, SafeAreaView, TouchableHighlight, TouchableHighlightProps } from 'react-native';
 
 import colors from '../styles/colors';
 import fonts from '../styles/fonts';
 
-interface ProgramTypeButtonProps extends RectButtonProps {
+interface ProgramTypeButtonProps extends TouchableHighlightProps {
   title: string;
   active?: boolean;
 }
@@ -22,7 +21,7 @@ export function ProgramTypeButton({
                 active && styles.containerActive  
             ]} 
         >
-            <RectButton 
+            <TouchableHighlight 
                 {...rest}
             >
                 <Text 
@@ -33,7 +32,7 @@ export function ProgramTypeButton({
                 >
                     {title}
                 </Text>
-        </RectButton>
+            </TouchableHighlight>
         </SafeAreaView>
         
     );

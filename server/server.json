@@ -30,22 +30,45 @@
     }
   ],
   "programs_types": [
-    {"key": "method", "title": "Método Turbo"},
     {"key": "hiit", "title": "HIIT"},
     {"key": "yoga", "title": "Yoga"}
   ],
   "programs": [
     {
       "id": 1,
-      "title": "Método Turbo #1",
+      "title": "HIIT #1",
       "thumbnail": "https://image.freepik.com/fotos-gratis/retrato-de-corpo-inteiro-de-uma-desportista-em-forma-concentrada_171337-10248.jpg",
-      "type": "method"
+      "type": "hiit"
     },
     {
-      "id": 1,
-      "title": "Método Turbo #2",
+      "id": 2,
+      "title": "Yoga #1",
+      "thumbnail": "https://image.freepik.com/fotos-gratis/full-shot-mulher-sentada-no-tapete-de-ioga_23-2148889611.jpg",
+      "type": "yoga"
+    },
+    {
+      "id": 3,
+      "title": "HIIT #2",
       "thumbnail": "https://image.freepik.com/fotos-gratis/retrato-de-corpo-inteiro-de-uma-desportista-em-forma-concentrada_171337-10248.jpg",
-      "type": "method"
+      "type": "hiit"
+    },
+    {
+      "id": 4,
+      "title": "Yoga #2",
+      "thumbnail": "https://image.freepik.com/fotos-gratis/foto-de-estudio-de-uma-jovem-mulher-apta-a-fazer-exercicios-de-ioga-no-espaco-verde_155003-14216.jpg",
+      "type": "yoga"
+    },
+    {
+      "id": 5,
+      "title": "HIIT #3",
+      "thumbnail": "https://image.freepik.com/fotos-gratis/retrato-de-corpo-inteiro-de-uma-desportista-em-forma-concentrada_171337-10248.jpg",
+      "type": "hiit"
+    },
+    {
+      "id": 6,
+      "title": "Yoga #3",
+      "thumbnail": "https://image.freepik.com/fotos-gratis/retrato-de-corpo-inteiro-de-uma-desportista-em-forma-concentrada_171337-10248.jpg",
+      "type": "yoga"
     }
   ],
   "lessons": [
@@ -53,7 +76,7 @@
       "id": 1,
       "title": "Aula #1",
       "description": "Mussum Ipsum, cacilds vidis litro abertis. Admodum accumsan disputationi eu sit. Vide electram sadipscing et per. Per aumento de cachacis, eu reclamis. Paisis, filhis, espiritis santis. Cevadis im ampola pa arma uma pindureta.",
-      "video": "video_1.mp4",
+      "video": "https://www.rmp-streaming.com/media/big-buck-bunny-360p.mp4",
       "thumbnail": "https://image.freepik.com/fotos-gratis/retrato-de-corpo-inteiro-de-uma-desportista-em-forma-concentrada_171337-10248.jpg",
       "program": 1
     },
@@ -61,7 +84,7 @@
       "id": 2,
       "title": "Aula #2",
       "description": "Mussum Ipsum, cacilds vidis litro abertis. Admodum accumsan disputationi eu sit. Vide electram sadipscing et per. Per aumento de cachacis, eu reclamis. Paisis, filhis, espiritis santis. Cevadis im ampola pa arma uma pindureta.",
-      "video": "video_1.mp4",
+      "video": "https://www.rmp-streaming.com/media/big-buck-bunny-360p.mp4",
       "thumbnail": "https://image.freepik.com/fotos-gratis/retrato-de-corpo-inteiro-de-uma-desportista-em-forma-concentrada_171337-10248.jpg",
       "program": 1
     }

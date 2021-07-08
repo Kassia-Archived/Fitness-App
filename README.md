@@ -77,7 +77,7 @@ $ git clone git@github.com:KassiaMabily/Fitness-App.git
 $ cd server
 
 # Run server at your port
-$ json-server --host <YOUR-IP> -w -d 750 -p 3333
+$ json-server --host <YOUR-IP> ./server/server.json -w -d 750 -p 3333
 
 # The server will start at port: 3333 - go to http://<your-ip>:3333
 

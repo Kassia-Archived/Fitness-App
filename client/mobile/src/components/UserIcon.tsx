@@ -19,7 +19,7 @@ export const UserIcon = ({ data, ...rest}: PersonalProps) => {
             {...rest}
         >
             <Image
-                source={require("./../assets/gessya.jpg")} 
+                source={{ uri: data.photo }} 
                 style={styles.image}
             />
             <Text style={styles.title}>
@@ -31,19 +31,16 @@ export const UserIcon = ({ data, ...rest}: PersonalProps) => {
 
 const styles = StyleSheet.create({
     container: {
-        flex: 1,
         width: 125,
-        margin: 10,
         textAlign: "center",
         justifyContent: "center",
         alignItems: "center"
     },
     image: {
-        flex: 1,
         width: 100,
         height: 100,
         borderRadius: 150,
-        resizeMode: 'center',
+        resizeMode: 'cover',
     },
     title: {
         color: colors.white,

@@ -5,7 +5,8 @@ import {
   Image,
   Text,
   FlatList,
-  ActivityIndicator
+  ActivityIndicator,
+  RefreshControl
 } from 'react-native';
 import { useNavigation } from '@react-navigation/native';
 
@@ -30,6 +31,7 @@ export function Programs() {
 
     const [ page, setPage ] = useState(1);
     const [ loadingMore, setLoadingMore ] = useState(false);
+    const [ isRefreshing, setIsRefreshing ] = useState(false)
 
     function handleTypeSelected(type: string) {
         setTypeSelected(type);
@@ -66,7 +68,7 @@ export function Programs() {
         if(!data) {
           return setLoading(true);
         }
-    
+        
         if(page > 1) {
             setPrograms(oldValue => [...oldValue, ...data])
             setFilteredPrograms(oldValue => [...oldValue, ...data])
@@ -100,6 +102,12 @@ export function Programs() {
         fetchProgramTypes();
     }, []);
 
+    const onRefresh = React.useCallback(() => {
+        setIsRefreshing(true);
+        fetchPrograms();
+        setIsRefreshing(false);
+    }, []);
+
 
     if(loading) {
         return <Load />
@@ -128,6 +136,14 @@ export function Programs() {
                 <View style={styles.programs}>
                     <FlatList 
                         data={filteredPrograms}
+                        refreshing={isRefreshing}
+                        refreshControl={ 
+                            <RefreshControl 
+                                refreshing={isRefreshing} 
+                                onRefresh={onRefresh} 
+                                tintColor={colors.white}
+                            /> 
+                        }
                         keyExtractor={(item) => String(item.id)}
                         renderItem={({ item }) => (
                             <PrimaryCard 

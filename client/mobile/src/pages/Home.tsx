@@ -24,7 +24,7 @@ interface PersonalProps {
     name: string;
     photo: string;
 }
-const personals: PersonalProps[] = [{id: "1", name: "Gessya Santana", photo: "gessya.jpg"}]
+const personals: PersonalProps[] = [{id: "1", name: "Jane Doe", photo: "https://image.freepik.com/fotos-gratis/mulher-desportiva-saiu-demonstrar-muscule-em-estudio_273443-1245.jpg"}]
 
 export function Home() {
     const [ loading, setLoading ] = useState(true);
@@ -122,7 +122,6 @@ const styles = StyleSheet.create({
         justifyContent: 'flex-start',
         paddingHorizontal: 30,
         backgroundColor: colors.background,
-        flex: 1
     },
     content: {
         justifyContent: "flex-start",
@@ -142,7 +141,6 @@ const styles = StyleSheet.create({
     userList: {
         height: 150,
         justifyContent: 'center',
-        paddingBottom: 5,
     },
     wrapperActiveIndicator: {
         height: 250, 

@@ -88,7 +88,7 @@ const VideoPlayer = ({ data }: VideoProps) => {
 
         <Video
             ref={videoRef}
-            source={{ uri: "https://d3dye4q2iulex5.cloudfront.net/DANCE_MIX-2-python/hls_480p.m3u8" }}
+            source={{ uri: data.video }}
             style={styles.video}
             controls={true}
             resizeMode={'cover'}

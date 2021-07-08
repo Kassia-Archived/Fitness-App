@@ -8,7 +8,8 @@ import {
     FlatList,
     Dimensions,
     ActivityIndicator,
-    View
+    View,
+    Platform
 } from 'react-native';
 import { RouteProp, useNavigation, useRoute } from '@react-navigation/native';
 
@@ -16,7 +17,8 @@ import { LessonProps } from '../libs/storage';
 
 import colors from '../styles/colors';
 import fonts from '../styles/fonts';
-import VideoPlayer from '../components/VideoPlayer';
+import VideoPlayerIOS from '../components/VideoPlayer/VideoPlayer.ios';
+import VideoPlayerAndroid from '../components/VideoPlayer/VideoPlayer.android';
 
 type ParamList = {
     Detail: {
@@ -28,6 +30,11 @@ export function Lesson() {
     const route = useRoute<RouteProp<ParamList, 'Detail'>>();
     const navigation = useNavigation();
 
+    const Component = Platform.select({
+        ios: () => VideoPlayerIOS,
+        android: () => VideoPlayerAndroid
+    })();
+
     useLayoutEffect(() => {
         navigation.setOptions({ headerTitle: route.params.lesson.title });
     }, [navigation, route]);
@@ -35,7 +42,7 @@ export function Lesson() {
     return (
         <SafeAreaView style={{ flex: 1 }}>
             <View style={styles.videoWrapper}>
-                <VideoPlayer data={route.params.lesson}/>
+                <Component data={route.params.lesson}/>
             </View>
             <ScrollView style={styles.descriptionWrapper}>
                 <Text style={styles.text}>
