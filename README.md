@@ -12,6 +12,7 @@
     <a href="https://github.com/KassiaMabily/Fitness-App/commits/master">
         <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/KassiaMabily/Fitness-App">
     </a>
+    <img alt="License" src="https://img.shields.io/badge/license-MIT-brightgreen">
 </p>
 
 <h4 align="center">
@@ -48,7 +49,7 @@ The Fitness App is for personal trainers publish yours videos for streaming and 
     - [ ] Payment to have acess to mobile app
 - [ ] API with Django Rest Framework:
     - [ ] Register user
-    - [ ] Process payments and provide acsess for users
+    - [ ] Process payments and provide access for users
     - [ ] Consulting programs, lessons and videos
 
 ---
@@ -136,16 +137,46 @@ The following tools were used in the construction of the project:
 
 ---
 
-## Author
-
+## Authors
+<table>
+  <tr>
+    <td align="center">
+<p>
 <a href="#">
- <img style="border-radius: 50%;" src="https://avatars3.githubusercontent.com/u/52832800?s=460&u=61b426b901b8fe02e12019b1fdb67bf0072d4f00&v=4" width="100px;" alt="Thiago Marinho"/>
+ <img style="border-radius: 50%" src="https://avatars3.githubusercontent.com/u/52832800?s=460&u=61b426b901b8fe02e12019b1fdb67bf0072d4f00&v=4" width="100px;" alt="Kassia Fraga"/>
  <br />
  <sub><b>Kassia Fraga</b></sub></a><a href="#" title="Kassia Fraga"></a>
  <br />
+ <sub>Fullstack 👩‍💻</sub>
+<br/>
 
 [![Linkedin Badge](https://img.shields.io/badge/-Kassia-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/kassia-fraga-178b7b1a7/)](https://www.linkedin.com/in/kassia-fraga-178b7b1a7/) 
 [<img src = "https://img.shields.io/badge/@kassia.mabily-%23E4405F.svg?&style=flat-square&logo=instagram&logoColor=white">](https://www.instagram.com/kassia.mabily/)
 [![Gmail Badge](https://img.shields.io/badge/-kassiafraga7@gmail.com-c14438?style=flat-square&logo=Gmail&logoColor=white&link=mailto:kassiafraga7@gmail.com)](mailto:kassiafraga7@gmail.com)
+</p>
+</td>
+<td align="center">
+<p>
+<a href="#">
+ <img style="border-radius: 50%;" src="https://avatars3.githubusercontent.com/u/54851787?s=460&u=61b426b901b8fe02e12019b1fdb67bf0072d4f00&v=4" width="100px;" alt="Patrick Souza"/>
+ <br />
+ <sub><b>Patrick Souza</b></sub></a><a href="#" title="Patrick Souza"></a>
+ <br />
+ <sub>Backend 👨‍💻</sub>
+ <br />
+
+[![Linkedin Badge](https://img.shields.io/badge/-Patrick-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/patrick-felipe-323057150/)](https://www.linkedin.com/in/patrick-felipe-323057150/) 
+[<img src = "https://img.shields.io/badge/@patrick.souza54-%23E4405F.svg?&style=flat-square&logo=instagram&logoColor=white">](https://www.instagram.com/patrick.souza54/)
+[![Gmail Badge](https://img.shields.io/badge/-souza.felipe.patrick@gmail.com-c14438?style=flat-square&logo=Gmail&logoColor=white&link=mailto:souza.felipe.patrick@gmail.com)](mailto:souza.felipe.patrick@gmail.com)
+</p>
+</td>
+  </tr>
+</table>
 
 ---
+
+## 📝 Licença
+
+Este projeto esta sobe a licença [MIT](./LICENSE).
+
+Feito com ❤️ por Kassia e Patrick
