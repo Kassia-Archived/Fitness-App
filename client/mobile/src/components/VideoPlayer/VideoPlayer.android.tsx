@@ -74,7 +74,7 @@ const VideoPlayer = ({ data }: VideoProps) => {
                     ],
                     title: title,
                     subtitle: subtitle,
-                    studio: 'Gessya Santana',
+                    studio: 'Fitness APP',
                     type: 'movie',
                 },
                 streamDuration: duration,

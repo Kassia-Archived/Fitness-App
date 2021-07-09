@@ -1,9 +1,9 @@
-<h1 align="center">
-   🏋️‍♀️<a href="#"> Fitness App </a>
-</h1>
+<p align="center">
+    <img src="./client/mobile/src/assets/logo-transparent.png" height="150" width="150" alt="Fitness APP" />
+</p>
 
 <h3 align="center">
-    Streamig exercises video app
+    🏋️‍♀️ Clean model for streaming video app
 </h3>
 
 <p align="center">
@@ -27,12 +27,18 @@
     <a href="#user-content-license">License</a>
 </p>
 
-## About
+<p align="center">
+  <kbd>
+    <img width="250" style="border-radius: 5px" height="450" src="./client/mobile/src/assets/demo.gif" alt="Intro">
+  </kbd>
+</p>
+
+## 💻 Overview
 
 The Fitness App is for personal trainers publish yours videos for streaming and payment with Stripe
 
 ---
-## Features
+## ✅ Features
 
 - [x] Cast video with chromecast (Android)
 - [x] Cast video with Airplay (iOS)
@@ -47,7 +53,7 @@ The Fitness App is for personal trainers publish yours videos for streaming and 
 
 ---
 
-## How it works
+## ⚙️ How it works
 
 This project is divided into three parts:
 1. Backend (server folder)
@@ -57,7 +63,7 @@ This project is divided into three parts:
 
 Both Frontend and Mobile need the Backend to be running to work.
 
-### Pre-requisites
+### 👉 Pre-requisites
 
 Before you begin, you will need to have the following tools installed on your machine:
 [Git](https://git-scm.com), [Node.js](https://nodejs.org/en/), [Python](https://www.python.org/)
@@ -65,7 +71,7 @@ In addition, it is good to have an editor to work with the code like [VSCode](ht
 
 For a complete instruction to setting up the development environment mobile, please read the [docs](https://reactnative.dev/docs/environment-setup)
 
-#### Run Backend (server)
+### 👉 Run Backend (server)
 We still don't have a backend yet, so we use a [JSON Server](https://github.com/typicode/json-server) to get a full fake REST API
 
 ```bash
@@ -83,7 +89,7 @@ $ json-server --host <YOUR-IP> ./server/server.json -w -d 750 -p 3333
 
 ```
 
-#### Running the mobile application
+### 👉 Running the mobile application
 
 ```bash
 
@@ -104,7 +110,7 @@ $ npx react-native run-android
 
 ```
 
-## Tech Stack
+## 🚀 Tech Stack
 
 The following tools were used in the construction of the project:
 
